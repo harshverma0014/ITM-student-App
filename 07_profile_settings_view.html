@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>7. Profile / Settings View - ITM Gwalior</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+  body { background: #4A0404; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+  .phone { position: relative; width: 390px; min-height: 844px; background: #f9fafb; border-radius: 28px; box-shadow: 0 20px 50px rgba(0,0,0,0.12); display: flex; flex-direction: column; overflow: hidden; }
+  .profile-banner { background: #4A0404; color: #ffffff; padding: 28px 20px; display: flex; align-items: center; gap: 16px; }
+  .avatar-xl { width: 64px; height: 64px; border-radius: 999px; background: #9ca3af; color: #ffffff; font-size: 26px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+  .profile-banner h1 { font-size: 20px; font-weight: 800; }
+  .profile-banner p { font-size: 12px; color: #fecaca; margin-top: 2px; }
+  .body-pad { flex: 1; padding: 16px 16px 84px; overflow-y: auto; }
+  .card { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 16px; margin-bottom: 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.03); }
+  .card h2 { font-size: 16px; font-weight: 800; color: #111827; margin-bottom: 12px; }
+  .info-row { display: flex; align-items: center; gap: 12px; font-size: 13px; color: #1f2937; font-weight: 600; margin-bottom: 12px; }
+  .info-row:last-child { margin-bottom: 0; }
+  .setting-row { display: flex; align-items: center; justify-content: space-between; font-size: 13px; font-weight: 700; color: #1f2937; margin-bottom: 14px; }
+  .setting-left { display: flex; align-items: center; gap: 10px; }
+  .toggle { width: 42px; height: 22px; background: #d1d5db; border-radius: 999px; position: relative; padding: 2px; }
+  .toggle-knob { width: 18px; height: 18px; background: #4A0404; border-radius: 999px; }
+  .logout-btn { width: 100%; background: #ffffff; border: 1px solid #fca5a5; color: #b91c1c; border-radius: 12px; padding: 12px; font-size: 13px; font-weight: 700; cursor: pointer; }
+  .bottom-nav { position: absolute; left: 0; right: 0; bottom: 0; background: #ffffff; border-top: 1px solid #e5e7eb; display: grid; grid-template-columns: 1fr 1fr; padding: 8px 0; }
+  .nav-item { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 11px; font-weight: 700; color: #6b7280; text-decoration: none; }
+  .nav-item.active { color: #4A0404; }
+</style>
+</head>
+<body>
+  <div class="phone">
+    <div class="profile-banner">
+      <div class="avatar-xl">H</div>
+      <div>
+        <h1>Harsh Verma</h1>
+        <p>harsh.verma@itm.edu</p>
+      </div>
+    </div>
+    <div class="body-pad">
+      <div class="card">
+        <h2>Account Details</h2>
+        <div class="info-row"><span>&#127891;</span><span>B.Tech CSAIML</span></div>
+        <div class="info-row"><span>&#127970;</span><span>ITM, Gwalior, MP</span></div>
+        <div class="info-row"><span>&#128197;</span><span>Joined: 2024</span></div>
+      </div>
+      <div class="card">
+        <div class="setting-row">
+          <div class="setting-left"><span>&#9881;</span><span>App Settings</span></div>
+        </div>
+        <div class="setting-row">
+          <div class="setting-left"><span>&#127912;</span><span>Theme (Light)</span></div>
+          <div class="toggle"><div class="toggle-knob"></div></div>
+        </div>
+        <div class="setting-row" style="margin-bottom:0;">
+          <div class="setting-left"><span>&#9432;</span><span>About</span></div>
+        </div>
+      </div>
+      <button class="logout-btn">&#8618; Log Out</button>
+    </div>
+    <div class="bottom-nav">
+      <a class="nav-item active" href="#"><span>&#8962;</span><span>Home</span></a>
+      <a class="nav-item" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><span>&#9654;</span><span>YouTube</span></a>
+    </div>
+  </div>
+</body>
+</html>

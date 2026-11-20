@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>5. Register Modal - ITM Gwalior</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+  body { background: #4A0404; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+  .phone { position: relative; width: 390px; min-height: 844px; background: #1f2937; border-radius: 28px; box-shadow: 0 20px 50px rgba(0,0,0,0.12); display: flex; flex-direction: column; justify-content: center; padding: 20px; overflow: hidden; }
+  .backdrop-blur { position: absolute; inset: 0; background: #f9fafb; opacity: 0.25; }
+  .modal-card { position: relative; z-index: 2; background: #ffffff; border-radius: 20px; padding: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.35); }
+  .modal-top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .modal-title { display: flex; align-items: center; gap: 10px; }
+  .modal-title h2 { font-size: 17px; font-weight: 800; color: #111827; }
+  .close-btn { background: none; border: none; font-size: 20px; color: #6b7280; cursor: pointer; }
+  .sub { font-size: 13px; color: #4b5563; margin-top: 12px; }
+  .action-btn { width: 100%; background: #4A0404; color: #ffffff; border: none; border-radius: 12px; padding: 13px 16px; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: space-between; margin-top: 14px; cursor: pointer; }
+  .cancel-wrap { display: flex; justify-content: flex-end; margin-top: 16px; }
+  .cancel-btn { background: none; border: none; font-size: 13px; font-weight: 700; color: #374151; cursor: pointer; }
+  .bottom-nav { position: absolute; left: 0; right: 0; bottom: 0; background: #ffffff; border-top: 1px solid #e5e7eb; display: grid; grid-template-columns: 1fr 1fr; padding: 8px 0; z-index: 2; }
+  .nav-item { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 11px; font-weight: 700; color: #6b7280; text-decoration: none; }
+  .nav-item.active { color: #4A0404; }
+</style>
+</head>
+<body>
+  <div class="phone">
+    <div class="backdrop-blur"></div>
+    <div class="modal-card">
+      <div class="modal-top">
+        <div class="modal-title">
+          <span style="color:#991b1b;font-size:20px;">&#128197;</span>
+          <h2>Tech Fest 2025</h2>
+        </div>
+        <button class="close-btn">&times;</button>
+      </div>
+      <p class="sub">Choose your registration type:</p>
+      <button class="action-btn"><span>&#128101; Register to Participate</span><span>&#8599;</span></button>
+      <button class="action-btn" style="margin-top:10px;"><span>&#128188; Register to Work</span><span>&#8599;</span></button>
+      <div class="cancel-wrap"><button class="cancel-btn">Cancel</button></div>
+    </div>
+    <div class="bottom-nav">
+      <a class="nav-item active" href="#"><span>&#8962;</span><span>Home</span></a>
+      <a class="nav-item" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><span>&#9654;</span><span>YouTube</span></a>
+    </div>
+  </div>
+</body>
+</html>

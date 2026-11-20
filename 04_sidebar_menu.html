@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>4. Sidebar Menu - ITM Gwalior</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+  body { background: #4A0404; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+  .phone { position: relative; width: 390px; min-height: 844px; background: #e5e7eb; border-radius: 28px; box-shadow: 0 20px 50px rgba(0,0,0,0.12); display: flex; overflow: hidden; }
+  .drawer { width: 82%; background: #ffffff; display: flex; flex-direction: column; height: 100%; }
+  .drawer-head { background: #4A0404; color: #ffffff; padding: 24px 18px; display: flex; align-items: center; gap: 12px; }
+  .avatar-lg { width: 46px; height: 46px; border-radius: 999px; background: #9ca3af; color: #ffffff; font-weight: 800; font-size: 18px; display: flex; align-items: center; justify-content: center; }
+  .drawer-head h2 { font-size: 16px; font-weight: 800; }
+  .drawer-head p { font-size: 11px; color: #fecaca; margin-top: 2px; }
+  .menu-list { padding: 12px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+  .menu-item { display: flex; align-items: center; gap: 12px; padding: 11px 12px; border-radius: 10px; font-size: 13px; font-weight: 600; color: #1f2937; text-decoration: none; }
+  .menu-item.active { background: #fef2f2; color: #4A0404; font-weight: 700; }
+  .menu-item.danger { background: #fef2f2; color: #b91c1c; font-weight: 700; }
+  hr { border: none; border-top: 1px solid #e5e7eb; margin: 6px 0; }
+  .scrim { flex: 1; background: rgba(0,0,0,0.25); }
+</style>
+</head>
+<body>
+  <div class="phone">
+    <div class="drawer">
+      <div class="drawer-head">
+        <div class="avatar-lg">H</div>
+        <div>
+          <h2>Harsh Verma</h2>
+          <p>ITM Gwalior</p>
+          <p>ITM Gwalior (MP)</p>
+        </div>
+      </div>
+      <div class="menu-list">
+        <a class="menu-item active" href="#"><span>&#8962;</span><span>Dashboard / Home</span></a>
+        <a class="menu-item" href="#"><span>&#128197;</span><span>My Attendance</span></a>
+        <a class="menu-item" href="#"><span>&#128179;</span><span>Fee Dues &amp; Payments</span></a>
+        <a class="menu-item" href="#"><span>&#128202;</span><span>Personal Assessments &amp; Grades</span></a>
+        <hr />
+        <a class="menu-item" href="#"><span>?</span><span>FAQ</span></a>
+        <a class="menu-item danger" href="#"><span>!</span><span>Report Bullying</span></a>
+        <a class="menu-item" href="#"><span>&#9881;</span><span>Settings</span></a>
+        <a class="menu-item" href="#"><span>&#8618;</span><span>Log Out</span></a>
+      </div>
+    </div>
+    <div class="scrim"></div>
+  </div>
+</body>
+</html>
